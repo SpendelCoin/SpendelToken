@@ -1,2 +1,2 @@
 # SpendelToken
-Handmade meme token of the future 🐸💚
+The coolest meme on the 🌎. 
