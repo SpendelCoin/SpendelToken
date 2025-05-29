@@ -1,0 +1,38 @@
+# SpendelToken ($SPNDL)
+
+SpendelToken is a meme-based ERC-20 token launched on the Base network. It features a handcrafted frog mascot named Spendel — possibly the world’s first handmade meme!
+
+---
+
+### 🚀 Launch Details
+
+- **Token Name:** Spendel  
+- **Symbol:** $SPNDL  
+- **Total Supply:** 8,888,888,888  
+- **Network:** Base Mainnet (Chain ID: 8453)  
+- **Contract Address:** `0x8e0bb447d07207F62d2c014981239D98d9D0848b`
+
+---
+
+### ✅ Source Code Transparency
+
+This contract is fully open-source and viewable here.
+
+> ⚠️ **Base's block explorer (Blockscout) currently does not support public source code verification.**  
+> Verification will be completed as soon as that functionality becomes available.  
+> In the meantime, this repository provides full visibility.
+
+---
+
+### 📁 Files Included
+
+- `SpendelToken.sol` – Flattened Solidity source code  
+- `metadata.json` – Solidity compiler metadata  
+- `README.md` – This file
+
+---
+
+### 📬 Stay Updated
+
+Follow the project on X (Twitter): [@spendelcoin](https://x.com/spendelcoin)  
+Or visit our site (coming soon): spendel.me
