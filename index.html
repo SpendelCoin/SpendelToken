@@ -30,6 +30,22 @@
   </style>
 </head>
 <body>
+<div style="margin-top: 30px; padding: 20px; background-color: #f5f5f5; border-radius: 10px; text-align: center;">
+  <h3>✅ Official $SPNDL Contract Address</h3>
+  <p id="contractAddress" style="font-family: monospace; font-size: 16px; user-select: all; cursor: pointer;" onclick="copyAddress()">
+    0xB0CA338D52c53609Ade92ed0a2dE71cE55FE8dB5
+  </p>
+  <small>📋 Click the address to copy — always verify you're using the real $SPNDL token.</small>
+</div>
+
+<script>
+  function copyAddress() {
+    const address = "0xB0CA338D52c53609Ade92ed0a2dE71cE55FE8dB5";
+    navigator.clipboard.writeText(address).then(() => {
+      alert("Copied Spendel contract address!");
+    });
+  }
+</script>
 
   <!-- Real Spendel Image -->
   <img src="images/real-spendel.png" alt="Real Spendel" width="300">
