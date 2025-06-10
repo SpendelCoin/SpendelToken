@@ -11,14 +11,7 @@
       text-align: center;
       padding: 40px;
     }
-    .logo {
-      width: 300px;
-      margin: 30px auto;
-      display: block;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .cosmic-logo {
+    .logo, .cosmic-logo {
       width: 300px;
       margin: 30px auto;
       display: block;
@@ -36,6 +29,7 @@
       margin-bottom: 10px;
       text-decoration: none;
       color: #333;
+      cursor: pointer;
     }
     .buy-button {
       padding: 15px 30px;
@@ -76,10 +70,8 @@
 
   <!-- Contract Info -->
   <h2>✅ Official $SPNDL Contract Address</h2>
-  <a href="https://basescan.org/address/0xF28B176b9e341C8A12984D2e9171303B89c8E4AE" class="contract-address" target="_blank">
-    0xF28B176b9e341C8A12984D2e9171303B89c8E4AE
-  </a>
-  <p>📋 Click to verify on BaseScan — always use the real $SPNDL token address.</p>
+  <div class="contract-address" onclick="copyToClipboard()">0xF28B176b9e341C8A12984D2e9171303B89c8E4AE</div>
+  <p>📋 Click the address above to copy — always use the real $SPNDL token address.</p>
 
   <!-- Buy Button -->
   <a href="https://baseswap.fi/swap?inputCurrency=ETH&outputCurrency=0xF28B176b9e341C8A12984D2e9171303B89c8E4AE&chain=base" target="_blank" rel="noopener noreferrer">
@@ -93,6 +85,15 @@
   <img src="images/real-spendel.png" alt="The Real Spendel" class="logo">
 
   <script>
+    function copyToClipboard() {
+      const text = "0xF28B176b9e341C8A12984D2e9171303B89c8E4AE";
+      navigator.clipboard.writeText(text).then(function() {
+        alert("Copied: " + text);
+      }, function(err) {
+        console.error("Could not copy text: ", err);
+      });
+    }
+
     async function addToken() {
       try {
         const wasAdded = await window.ethereum.request({
@@ -121,6 +122,7 @@
 
 </body>
 </html>
+
 
 
 
