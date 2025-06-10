@@ -27,6 +27,8 @@
       border: 1px solid #ccc;
       border-radius: 6px;
       margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
     }
     .buy-button {
       padding: 15px 30px;
@@ -52,8 +54,8 @@
 </head>
 <body>
 
-  <!-- Real Spendel Image -->
-  <img src="images/real-spendel.png" alt="The Real Spendel" class="logo">
+  <!-- Cosmic Logo at Top -->
+  <img src="images/spendel-logo.png" alt="Spendel Cosmic Logo" class="cosmic-logo">
 
   <!-- Origin Story -->
   <h1>The Origin of Spendel</h1>
@@ -65,13 +67,12 @@
     Today, Spendel lives on as possibly the world’s first handmade meme, and maybe the world will agree that Spendel is the coolest meme on the planet!
   </p>
 
-  <!-- Cosmic Logo -->
-  <img src="images/spendel-logo.png" alt="Spendel Cosmic Logo" class="cosmic-logo">
-
   <!-- Contract Info -->
   <h2>✅ Official $SPNDL Contract Address</h2>
-  <p class="contract-address">0xF28B176b9e341C8A12984D2e9171303B89c8E4AE</p>
-  <p>📋 Click to copy — always verify you're using the real $SPNDL token on Base.</p>
+  <a href="https://basescan.org/address/0xF28B176b9e341C8A12984D2e9171303B89c8E4AE" class="contract-address" target="_blank">
+    0xF28B176b9e341C8A12984D2e9171303B89c8E4AE
+  </a>
+  <p>📋 Click to verify on BaseScan — always use the real $SPNDL token address.</p>
 
   <!-- Buy Button -->
   <a href="https://baseswap.fi/swap?inputCurrency=ETH&outputCurrency=0xF28B176b9e341C8A12984D2e9171303B89c8E4AE&chain=base" target="_blank" rel="noopener noreferrer">
@@ -80,6 +81,9 @@
 
   <!-- Add to Wallet Button -->
   <button onclick="addToken()" class="wallet-button">➕ Add $SPNDL to Wallet</button>
+
+  <!-- Real Spendel Image at Bottom -->
+  <img src="images/real-spendel.png" alt="The Real Spendel" class="logo">
 
   <script>
     async function addToken() {
@@ -110,6 +114,7 @@
 
 </body>
 </html>
+
 
 
 
